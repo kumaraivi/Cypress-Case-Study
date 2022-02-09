@@ -26,6 +26,7 @@ class PostPage{
     }
 
     static clickclickOnDeleteBtn(){
+        cy.wait(2000)
         cy.get(DEL_BTN).click({force:true})
         
     }
