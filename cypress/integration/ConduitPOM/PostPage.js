@@ -17,16 +17,18 @@ class PostPage{
             cy.get(ABOUT).type(about)
             cy.get(MAIN_CONTENT).type(message)
             cy.get(TAG).type(tag)
+            cy.wait(2000)
         })
         
     }
     static clickOnPostArticle(){
         cy.get(BTN).click({force:true})
         
+        
     }
 
     static clickclickOnDeleteBtn(){
-        cy.wait(2000)
+        cy.wait(20000)
         cy.get(DEL_BTN).click({force:true})
         
     }
