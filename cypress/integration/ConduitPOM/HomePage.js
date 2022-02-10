@@ -11,6 +11,7 @@ class HomePage{
     }
 
     static ClicknewPostBtn(){
+        cy.wait(1000)
         cy.get(NEW_POST).click()
     }
 }
